@@ -1,0 +1,79 @@
+# ===================================================================
+# CONFIGURAÇÕES DO SERVIDOR
+# ===================================================================
+server:
+  port: 8001
+  servlet:
+    context-path: /api
+
+# ===================================================================
+# CONFIGURAÇÕES DO SPRING (Aplicação, Banco, JPA, etc.)
+# ===================================================================
+spring:
+  application:
+    name: meu-projeto-awesome
+  
+  # Perfil ativo (ex: dev, prod, test)
+  profiles:
+    active: dev
+
+  # Configurações de Banco de Dados (Exemplo com PostgreSQL)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/meu_banco
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+
+  # Configurações do JPA / Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      # Use 'update' apenas em dev. Em prod, use 'validate' ou 'none' e ferramentas como Flyway/Liquibase.
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        highlight_sql: true
+
+  # Configurações de Internacionalização (Mensagens)
+  messages:
+    basename: messages
+    encoding: UTF-8
+
+  # Configurações do Jackson (JSON)
+  jackson:
+    default-property-inclusion: non_null
+
+  web:
+    error:
+      include-message: always
+      include-binding-errors: always
+
+# ===================================================================
+# CONFIGURAÇÕES DE LOGS
+# ===================================================================
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    com.suaempresa.seuprojeto: DEBUG # Mude para o pacote principal da sua aplicação
+  file:
+    name: logs/application.log
+
+# ===================================================================
+# CONFIGURAÇÕES DO SPRING BOOT ACTUATOR (Monitoramento)
+# ===================================================================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics, prometheus
+  endpoint:
+    health:
+      show-details: always
