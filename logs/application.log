@@ -4483,3 +4483,255 @@ Caused by: java.lang.ClassNotFoundException: com.auth0.jwt.exceptions.JWTVerific
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
 	... 30 common frames omitted
 
+2026-03-22T19:04:39.158-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : Starting EtlApplication using Java 21.0.9 with PID 10872 (E:\Java\etl\target\classes started by eusou in E:\Java\etl)
+2026-03-22T19:04:39.160-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : The following 1 profile is active: "dev"
+2026-03-22T19:04:39.206-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-22T19:04:39.207-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-22T19:04:39.221-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file E:\Java\etl\compose.yaml
+2026-03-22T19:04:40.284-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   : time="2026-03-22T19:04:40-03:00" level=warning msg="E:\\Java\\etl\\compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-03-22T19:04:40.463-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Starting 
+2026-03-22T19:04:40.464-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Starting 
+2026-03-22T19:04:41.920-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Started 
+2026-03-22T19:04:41.921-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Starting 
+2026-03-22T19:04:42.117-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Started 
+2026-03-22T19:04:42.681-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Started 
+2026-03-22T19:04:42.681-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Waiting 
+2026-03-22T19:04:42.681-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Waiting 
+2026-03-22T19:04:42.681-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Waiting 
+2026-03-22T19:04:43.189-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Healthy 
+2026-03-22T19:04:43.189-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Healthy 
+2026-03-22T19:04:43.189-03:00  INFO 10872 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Healthy 
+2026-03-22T19:05:02.978-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-22T19:05:03.042-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interface.
+2026-03-22T19:05:04.029-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8001 (http)
+2026-03-22T19:05:04.048-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22T19:05:04.048-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-22T19:05:04.112-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2303 ms
+2026-03-22T19:05:04.511-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-22T19:05:04.586-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-22T19:05:05.174-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-22T19:05:05.208-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-22T19:05:05.392-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1de02e45
+2026-03-22T19:05:05.395-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-22T19:05:05.447-03:00  WARN 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-22T19:05:05.481-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/etl_dynamic_db?ApplicationName=meu-projeto-awesome]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: etl_dynamic_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-22T19:05:06.584-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-22T19:05:06.668-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-22T19:05:06.769-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-22T19:05:06.964-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authService
+2026-03-22T19:05:07.016-03:00  WARN 10872 --- [meu-projeto-awesome] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-22T19:05:07.894-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-03-22T19:05:07.991-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8001 (http) with context path '/api'
+2026-03-22T19:05:07.998-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : Started EtlApplication in 29.342 seconds (process running for 30.574)
+2026-03-22T19:05:08.007-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.b.b.a.JobLauncherApplicationRunner   : Running default command line with: []
+2026-03-22T19:05:08.460-03:00 DEBUG 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.SQL                        : 
+    [34mselect[0m
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.updated_at 
+    [34mfrom[0m
+        users u1_0 
+    [34mwhere[0m
+        u1_0.email=?
+2026-03-22T19:05:08.597-03:00 DEBUG 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.SQL                        : 
+    [34minsert[0m 
+    [34minto[0m
+        users
+        (active, created_at, email, name, password, updated_at, id) 
+    [34mvalues[0m
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-22T19:05:08.610-03:00  WARN 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.jdbc.error             : HHH000247: ErrorCode: 0, SQLState: 23502
+2026-03-22T19:05:08.610-03:00  WARN 10872 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.jdbc.error             : ERROR: null value in column "created_at" of relation "users" violates not-null constraint
+  Detalhe: Failing row contains (9b626ded-ef41-44c0-9d17-da7ad021e61d, null, gabriel@hamasakis.dev, null, $2a$10$nAEUoUNqQOxZ6rcdEMI3re01C2nqoF0TIcbIEkiVyNA.AFKyTjPZ6, null, t).
+2026-03-22T19:05:08.622-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-22T19:05:08.635-03:00 ERROR 10872 --- [meu-projeto-awesome] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERROR: null value in column "created_at" of relation "users" violates not-null constraint
+  Detalhe: Failing row contains (9b626ded-ef41-44c0-9d17-da7ad021e61d, null, gabriel@hamasakis.dev, null, $2a$10$nAEUoUNqQOxZ6rcdEMI3re01C2nqoF0TIcbIEkiVyNA.AFKyTjPZ6, null, t).] [insert into users (active,created_at,email,name,password,updated_at,id) values (?,?,?,?,?,?,?)]; SQL [insert into users (active,created_at,email,name,password,updated_at,id) values (?,?,?,?,?,?,?)]; constraint [created_at]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:169) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.convertHibernateAccessException(HibernateExceptionTranslator.java:131) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.hibernate.HibernateExceptionTranslator.translateExceptionIfPossible(HibernateExceptionTranslator.java:105) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:223) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:557) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:794) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:757) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:687) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:408) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135) ~[spring-tx-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-7.0.6.jar:7.0.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222) ~[spring-aop-7.0.6.jar:7.0.6]
+	at jdk.proxy4/jdk.proxy4.$Proxy162.save(Unknown Source) ~[na:na]
+	at dev.hamasakis.etl.seeder.UserSeeder.run(UserSeeder.java:28) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$1(SpringApplication.java:792) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:800) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$0(SpringApplication.java:776) ~[spring-boot-4.0.4.jar:4.0.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:776) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:328) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.4.jar:4.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.4.jar:4.0.4]
+	at dev.hamasakis.etl.EtlApplication.main(EtlApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.4.jar:4.0.4]
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [ERROR: null value in column "created_at" of relation "users" violates not-null constraint
+  Detalhe: Failing row contains (9b626ded-ef41-44c0-9d17-da7ad021e61d, null, gabriel@hamasakis.dev, null, $2a$10$nAEUoUNqQOxZ6rcdEMI3re01C2nqoF0TIcbIEkiVyNA.AFKyTjPZ6, null, t).] [insert into users (active,created_at,email,name,password,updated_at,id) values (?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:73) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:34) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:115) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:184) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:145) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:53) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:66) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:55) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.doStaticInserts(InsertCoordinatorStandard.java:180) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.coordinateInsert(InsertCoordinatorStandard.java:120) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinatorStandard.insert(InsertCoordinatorStandard.java:93) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:108) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:634) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:505) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:381) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:138) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.fireFlush(SessionImpl.java:1484) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:481) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2111) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2033) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:410) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:166) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commitNoRollbackOnly(JdbcResourceLocalTransactionCoordinatorImpl.java:248) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:242) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:89) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:553) ~[spring-orm-7.0.6.jar:7.0.6]
+	... 36 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: null value in column "created_at" of relation "users" violates not-null constraint
+  Detalhe: Failing row contains (9b626ded-ef41-44c0-9d17-da7ad021e61d, null, gabriel@hamasakis.dev, null, $2a$10$nAEUoUNqQOxZ6rcdEMI3re01C2nqoF0TIcbIEkiVyNA.AFKyTjPZ6, null, t).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2875) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2560) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:429) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:526) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:436) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196) ~[postgresql-42.7.10.jar:42.7.10]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:157) ~[postgresql-42.7.10.jar:42.7.10]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:181) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	... 59 common frames omitted
+
+2026-03-22T19:05:08.645-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-22T19:05:08.651-03:00  INFO 10872 --- [meu-projeto-awesome] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-22T19:05:08.657-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-22T19:05:08.661-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-22T19:05:08.664-03:00  INFO 10872 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-22T19:07:01.662-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : Starting EtlApplication using Java 21.0.9 with PID 9380 (E:\Java\etl\target\classes started by eusou in E:\Java\etl)
+2026-03-22T19:07:01.666-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : The following 1 profile is active: "dev"
+2026-03-22T19:07:01.711-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-22T19:07:01.711-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-22T19:07:01.723-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] .s.b.d.c.l.DockerComposeLifecycleManager : Using Docker Compose file E:\Java\etl\compose.yaml
+2026-03-22T19:07:02.581-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   : time="2026-03-22T19:07:02-03:00" level=warning msg="E:\\Java\\etl\\compose.yaml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+2026-03-22T19:07:02.765-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Starting 
+2026-03-22T19:07:02.765-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Starting 
+2026-03-22T19:07:03.764-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Started 
+2026-03-22T19:07:03.976-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Started 
+2026-03-22T19:07:03.977-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Starting 
+2026-03-22T19:07:04.710-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Started 
+2026-03-22T19:07:04.710-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Waiting 
+2026-03-22T19:07:04.710-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Waiting 
+2026-03-22T19:07:04.710-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Waiting 
+2026-03-22T19:07:05.234-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-postgres Healthy 
+2026-03-22T19:07:05.234-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-kafka Healthy 
+2026-03-22T19:07:05.234-03:00  INFO 9380 --- [meu-projeto-awesome] [OutputReader-stderr] o.s.boot.docker.compose.core.DockerCli   :  Container etl-pgadmin Healthy 
+2026-03-22T19:07:25.010-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-22T19:07:25.063-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2026-03-22T19:07:26.069-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8001 (http)
+2026-03-22T19:07:26.088-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22T19:07:26.089-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-22T19:07:26.173-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2449 ms
+2026-03-22T19:07:26.627-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-22T19:07:26.721-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-03-22T19:07:27.345-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-22T19:07:27.393-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-22T19:07:27.623-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7aa02b61
+2026-03-22T19:07:27.626-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-22T19:07:27.670-03:00  WARN 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-22T19:07:27.700-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://127.0.0.1:5432/etl_dynamic_db?ApplicationName=meu-projeto-awesome]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.13
+	Default catalog/schema: etl_dynamic_db/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-22T19:07:28.735-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-22T19:07:28.801-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-22T19:07:28.891-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-22T19:07:29.050-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authService
+2026-03-22T19:07:29.084-03:00  WARN 9380 --- [meu-projeto-awesome] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-22T19:07:29.827-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-03-22T19:07:29.915-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8001 (http) with context path '/api'
+2026-03-22T19:07:29.922-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] dev.hamasakis.etl.EtlApplication         : Started EtlApplication in 28.721 seconds (process running for 29.506)
+2026-03-22T19:07:29.929-03:00  INFO 9380 --- [meu-projeto-awesome] [restartedMain] o.s.b.b.a.JobLauncherApplicationRunner   : Running default command line with: []
+2026-03-22T19:07:30.377-03:00 DEBUG 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.SQL                        : 
+    [34mselect[0m
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.updated_at 
+    [34mfrom[0m
+        users u1_0 
+    [34mwhere[0m
+        u1_0.email=?
+2026-03-22T19:07:30.528-03:00 DEBUG 9380 --- [meu-projeto-awesome] [restartedMain] org.hibernate.SQL                        : 
+    [34minsert[0m 
+    [34minto[0m
+        users
+        (active, created_at, email, name, password, updated_at, id) 
+    [34mvalues[0m
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-22T19:07:30.767-03:00  INFO 9380 --- [meu-projeto-awesome] [RMI TCP Connection(1)-192.168.15.10] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-22T19:07:30.767-03:00  INFO 9380 --- [meu-projeto-awesome] [RMI TCP Connection(1)-192.168.15.10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-22T19:07:30.770-03:00  INFO 9380 --- [meu-projeto-awesome] [RMI TCP Connection(1)-192.168.15.10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-22T19:13:52.617-03:00  INFO 9380 --- [meu-projeto-awesome] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-22T19:13:52.623-03:00  INFO 9380 --- [meu-projeto-awesome] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-22T19:13:52.628-03:00  INFO 9380 --- [meu-projeto-awesome] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-22T19:13:52.632-03:00  INFO 9380 --- [meu-projeto-awesome] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-22T19:13:52.634-03:00  INFO 9380 --- [meu-projeto-awesome] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
