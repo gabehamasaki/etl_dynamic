@@ -38,6 +38,22 @@ spring:
         endpoint: http://localhost:9000
         bucket: etl-raw-data
         path-style-access-enabled: true
+  
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: etl-processor-group
+      auto-offset-reset: earliest # Lê desde o início se perder a ligação
+
+    mail:
+      host: localhost
+      port: 1025 # Porta do Mailpit
+      properties:
+        mail:
+          smtp:
+            auth: false
+            starttls:
+              enable: false
 
   # Configurações do JPA / Hibernate
   jpa:

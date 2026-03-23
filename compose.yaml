@@ -74,6 +74,14 @@ services:
       exit 0;
       "
 
+  mailpit:
+    image: axllent/mailpit
+    container_name: mailpit
+    ports:
+      - "8025:8025" # Interface Web (Aceder no browser para ver os emails)
+      - "1025:1025" # Porta SMTP (Onde o Spring Boot vai enviar)
+        
+        
 volumes:
   pgdata:
   minio_data:
