@@ -2,7 +2,7 @@ package dev.hamasakis.etl.seeder;
 
 import dev.hamasakis.etl.enums.Role;
 import dev.hamasakis.etl.models.User;
-import dev.hamasakis.etl.repositories.UserReporsitory;
+import dev.hamasakis.etl.repositories.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -10,24 +10,24 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class UserSeeder implements CommandLineRunner {
 
-    private final UserReporsitory userReporsitory;
+    private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public UserSeeder(UserReporsitory userReporsitory, PasswordEncoder passwordEncoder) {
-        this.userReporsitory = userReporsitory;
+    public UserSeeder(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
 
     @Override
     public void run(String... args) throws Exception {
-        if (userReporsitory.findByEmail("gabriel@hamasakis.dev").isEmpty()) {
+        if (userRepository.findByEmail("gabriel@hamasakis.dev").isEmpty()) {
             User user = User.builder()
                     .email("gabriel@hamasakis.dev")
                     .password(passwordEncoder.encode("password"))
                     .role(Role.ADMIN)
                     .build();
 
-            userReporsitory.save(user);
+            userRepository.save(user);
 
             System.out.println("User seeded: " + user.getEmail());
             return;

@@ -1,6 +1,6 @@
 package dev.hamasakis.etl.services;
 
-import dev.hamasakis.etl.repositories.UserReporsitory;
+import dev.hamasakis.etl.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -11,11 +11,11 @@ import org.springframework.stereotype.Service;
 public class AuthService implements UserDetailsService {
 
     @Autowired
-    private UserReporsitory userReporsitory;
+    private UserRepository userRepository;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return userReporsitory.findByEmail(username)
+        return userRepository.findByEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
 }
