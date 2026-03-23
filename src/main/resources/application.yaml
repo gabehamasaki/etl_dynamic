@@ -11,17 +11,16 @@ server:
 # ===================================================================
 spring:
   application:
-    name: meu-projeto-awesome
+    name: etl_dynamic
   
   # Perfil ativo (ex: dev, prod, test)
   profiles:
     active: dev
 
-  # Configurações de Banco de Dados (Exemplo com PostgreSQL)
   datasource:
-    url: jdbc:postgresql://localhost:5432/meu_banco
-    username: postgres
-    password: password
+    url: jdbc:postgresql://localhost:5432/etl_dynamic_db
+    username: admin
+    password: adminpassword
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
