@@ -26,6 +26,18 @@ spring:
       maximum-pool-size: 10
       minimum-idle: 5
       connection-timeout: 30000
+  
+  cloud:
+    aws:
+      credentials:
+        access-key: admin
+        secret-key: password123
+      region:
+        static: us-east-1
+      s3:
+        endpoint: http://localhost:9000
+        bucket: etl-raw-data
+        path-style-access-enabled: true
 
   # Configurações do JPA / Hibernate
   jpa:

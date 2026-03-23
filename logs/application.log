@@ -427,3 +427,8 @@ Caused by: org.postgresql.util.PSQLException: ERROR: column u1_0.role does not e
 2026-03-23T01:21:34.852-03:00  INFO 6720 --- [etl_dynamic] [RMI TCP Connection(2)-192.168.15.10] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-23T01:21:34.853-03:00  INFO 6720 --- [etl_dynamic] [RMI TCP Connection(2)-192.168.15.10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-03-23T01:21:34.854-03:00  INFO 6720 --- [etl_dynamic] [RMI TCP Connection(2)-192.168.15.10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-23T01:23:01.450-03:00  INFO 6720 --- [etl_dynamic] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-23T01:23:01.455-03:00  INFO 6720 --- [etl_dynamic] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-23T01:23:01.461-03:00  INFO 6720 --- [etl_dynamic] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23T01:23:01.463-03:00  INFO 6720 --- [etl_dynamic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-23T01:23:01.465-03:00  INFO 6720 --- [etl_dynamic] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
