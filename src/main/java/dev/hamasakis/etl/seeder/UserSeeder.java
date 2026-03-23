@@ -1,5 +1,6 @@
 package dev.hamasakis.etl.seeder;
 
+import dev.hamasakis.etl.enums.Role;
 import dev.hamasakis.etl.models.User;
 import dev.hamasakis.etl.repositories.UserReporsitory;
 import org.springframework.boot.CommandLineRunner;
@@ -23,6 +24,7 @@ public class UserSeeder implements CommandLineRunner {
             User user = User.builder()
                     .email("gabriel@hamasakis.dev")
                     .password(passwordEncoder.encode("password"))
+                    .role(Role.ADMIN)
                     .build();
 
             userReporsitory.save(user);
