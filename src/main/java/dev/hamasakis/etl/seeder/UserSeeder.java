@@ -22,6 +22,7 @@ public class UserSeeder implements CommandLineRunner {
     public void run(String... args) throws Exception {
         if (userRepository.findByEmail("gabriel@hamasakis.dev").isEmpty()) {
             User user = User.builder()
+                    .name("Gabriel Hamasaki")
                     .email("gabriel@hamasakis.dev")
                     .password(passwordEncoder.encode("password"))
                     .role(Role.ADMIN)
